@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <name>monitor_01 - Detail Panel</name>
+  <width>800</width>
+  <height>520</height>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>10</x>
+    <y>10</y>
+    <width>500</width>
+    <height>30</height>
+    <text>Task: monitor_01</text>
+    <font>
+      <opifont.name>Arial</opifont.name>
+      <opifont.size>16</opifont.size>
+      <opifont.style>bold</opifont.style>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>10</x>
+    <y>50</y>
+    <width>200</width>
+    <height>30</height>
+    <text>Control &amp; Status</text>
+    <font>
+      <opifont.name>Arial</opifont.name>
+      <opifont.size>12</opifont.size>
+      <opifont.style>bold</opifont.style>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>85</y>
+    <width>150</width>
+    <height>25</height>
+    <text>Enable</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <x>180</x>
+    <y>85</y>
+    <width>80</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:ENABLE</pv_name>
+    <text>Enable</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>115</y>
+    <width>150</width>
+    <height>25</height>
+    <text>Status</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>115</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:STATUS</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>145</y>
+    <width>150</width>
+    <height>25</height>
+    <text>Message</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>145</y>
+    <width>500</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:MESSAGE</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>175</y>
+    <width>150</width>
+    <height>25</height>
+    <text>Cycle Count</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>175</y>
+    <width>100</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:CYCLE_COUNT</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>10</x>
+    <y>215</y>
+    <width>200</width>
+    <height>30</height>
+    <text>Input Parameters</text>
+    <font>
+      <opifont.name>Arial</opifont.name>
+      <opifont.size>12</opifont.size>
+      <opifont.style>bold</opifont.style>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>250</y>
+    <width>150</width>
+    <height>25</height>
+    <text>INPUT1 (V)</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>250</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:INPUT1</pv_name>
+    <read_only>false</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>340</x>
+    <y>250</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:INPUT1</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>280</y>
+    <width>150</width>
+    <height>25</height>
+    <text>INPUT2 (V)</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>280</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:INPUT2</pv_name>
+    <read_only>false</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>340</x>
+    <y>280</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:INPUT2</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>310</y>
+    <width>150</width>
+    <height>25</height>
+    <text>INPUT3 (V)</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>310</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:INPUT3</pv_name>
+    <read_only>false</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>340</x>
+    <y>310</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:INPUT3</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>340</y>
+    <width>150</width>
+    <height>25</height>
+    <text>RESET</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>340</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:RESET</pv_name>
+    <read_only>false</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>340</x>
+    <y>340</y>
+    <width>150</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:RESET</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>10</x>
+    <y>380</y>
+    <width>200</width>
+    <height>30</height>
+    <text>Output Values</text>
+    <font>
+      <opifont.name>Arial</opifont.name>
+      <opifont.size>12</opifont.size>
+      <opifont.style>bold</opifont.style>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>415</y>
+    <width>150</width>
+    <height>25</height>
+    <text>OUTPUT_RESULT (V)</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>415</y>
+    <width>200</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:OUTPUT_RESULT</pv_name>
+    <read_only>true</read_only>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <x>20</x>
+    <y>445</y>
+    <width>150</width>
+    <height>25</height>
+    <text>SAMPLE_COUNT</text>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <x>180</x>
+    <y>445</y>
+    <width>200</width>
+    <height>25</height>
+    <pv_name>SPARC:CONTROL:MONITOR_01:SAMPLE_COUNT</pv_name>
+    <read_only>true</read_only>
+  </widget>
+</display>
