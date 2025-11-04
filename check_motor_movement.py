@@ -66,6 +66,9 @@ class CheckMotorMovement(TaskBase):
         """Normalized motor movement callback: called with motor name and new position."""
         if self.get_cycle() > 10:
             self.logger.info(f"Motor {motor_name} moved to position {position}")
+            if not self.get_pv('ENABLE'):
+                return
+            # Set switchoff devices to 0 (CLOSE) upon motor movement
             for sw_name, sw in self.switches.items():
                 try:
                     sw.set(0)
@@ -94,6 +97,7 @@ class CheckMotorMovement(TaskBase):
             # Only process if task is enabled
             if not self.get_pv('ENABLE'):
                 self.logger.debug("Task disabled, skipping cycle")
+                
                 cothread.Sleep(1.0 / self.update_rate)
                 continue
             
